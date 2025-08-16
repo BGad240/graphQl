@@ -1,4 +1,5 @@
 "use client";
+import Link from 'next/link';
 import React from 'react';
 
 // أيقونات SVG جديدة للمشاريع
@@ -36,34 +37,34 @@ export default function HomePage() {
 
         <div className="grid md:grid-cols-3 gap-10">
           {/* Project Card 1: Countries */}
-          <a href="/countries" className="group block bg-slate-800/50 p-8 rounded-xl border border-slate-700 shadow-xl text-center transition-all duration-300 hover:border-pink-500 hover:-translate-y-2">
+          <Link href="/countries" className="group block bg-slate-800/50 p-8 rounded-xl border border-slate-700 shadow-xl text-center transition-all duration-300 hover:border-pink-500 hover:-translate-y-2">
             <div className="flex justify-center mb-4"><GlobeIcon /></div>
             <h3 className="text-2xl font-bold mb-2">Countries Explorer</h3>
             <p className="text-slate-400 mb-4">
               Browse and search for countries using a public GraphQL API.
             </p>
             <span className="font-semibold text-pink-500 group-hover:underline">View Project &rarr;</span>
-          </a>
+          </Link>
 
           {/* Project Card 2: E-commerce Store 1 */}
-          <a href="#" className="group block bg-slate-800/50 p-8 rounded-xl border border-slate-700 shadow-xl text-center transition-all duration-300 hover:border-pink-500 hover:-translate-y-2">
+          <Link href="#" className="group block bg-slate-800/50 p-8 rounded-xl border border-slate-700 shadow-xl text-center transition-all duration-300 hover:border-pink-500 hover:-translate-y-2">
             <div className="flex justify-center mb-4"><StoreIcon /></div>
             <h3 className="text-2xl font-bold mb-2">Modern E-commerce</h3>
             <p className="text-slate-400 mb-4">
               A full-featured online store with a powerful GraphQL backend.
             </p>
             <span className="font-semibold text-pink-500 group-hover:underline">View Project &rarr;</span>
-          </a>
+          </Link>
 
           {/* Project Card 3: E-commerce Store 2 */}
-          <a href="#" className="group block bg-slate-800/50 p-8 rounded-xl border border-slate-700 shadow-xl text-center transition-all duration-300 hover:border-pink-500 hover:-translate-y-2">
+          <Link href="#" className="group block bg-slate-800/50 p-8 rounded-xl border border-slate-700 shadow-xl text-center transition-all duration-300 hover:border-pink-500 hover:-translate-y-2">
             <div className="flex justify-center mb-4"><StoreIcon /></div>
             <h3 className="text-2xl font-bold mb-2">Gadget Galaxy</h3>
             <p className="text-slate-400 mb-4">
               An electronic gadgets store powered by a flexible GraphQL API.
             </p>
             <span className="font-semibold text-pink-500 group-hover:underline">View Project &rarr;</span>
-          </a>
+          </Link>
         </div>
       </main>
 
