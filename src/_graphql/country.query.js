@@ -9,3 +9,22 @@ query{
     }
 }
 `
+
+
+export const GET_COUNTRY= gql`
+query GetCountry($code: ID!) {
+  country(code: $code) {
+    code
+    name
+    capital
+    currency
+    emoji
+    languages {
+      code
+      name
+    }
+  }
+}
+`
+
+
